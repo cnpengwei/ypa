@@ -1,0 +1,97 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>
+        标题位置
+    </title>
+    <link href="__PUBLIC__/css/style.css" rel="stylesheet" />
+    <link href="__PUBLIC__/img/100du.ico" rel="shortcut icon" />
+    <script src="__PUBLIC__/js/jquery-1.11.0.min.js"></script>
+    <style>
+        .box{border:3px solid #FF00AA; background:#888; width:200px; height:300px; }
+    </style>
+</head
+<body>
+    <form id='form1' method='post'>
+        <div>
+            <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                <tr>
+                    <td width="8" background="__PUBLIC__/img/admin/tab_12.gif">&nbsp;</td>
+                    <td>
+                        <table width="100%" border="0" cellpadding="0" cellspacing="1" bgcolor="b5d6e6" onmouseover="changeto()"  onmouseout="changeback()">
+                            <tr>
+                                <td width="3%" height="22" background="__PUBLIC__/img/admin/bg2.gif" bgcolor="#FFFFFF">
+                                    <div align="center">
+                                        <input type="checkbox" name="checkbox" value="checkbox" />
+                                    </div>
+                                </td>
+                                <td width="3%" height="22" background="__PUBLIC__/img/admin/bg2.gif" bgcolor="#FFFFFF">
+                                    <div align="center"><span class="STYLE1">ID</span></div>
+                                </td>
+                                <td width="22%" height="22" background="__PUBLIC__/img/admin/bg2.gif" bgcolor="#FFFFFF">
+                                    <div align="center"><span class="STYLE1">文档标题</span></div>
+                                </td>
+                                <td width="14%" height="22" background="__PUBLIC__/img/admin/bg2.gif" bgcolor="#FFFFFF">
+                                    <div align="center"><span class="STYLE1">更新时间</span></div>
+                                </td>
+                                <td width="10%" background="__PUBLIC__/img/admin/bg2.gif" bgcolor="#FFFFFF">
+                                    <div align="center"><span class="STYLE1">关键字</span></div>
+                                </td>
+                                <td width="10%" height="22" background="__PUBLIC__/img/admin/bg2.gif" bgcolor="#FFFFFF">
+                                    <div align="center"><span class="STYLE1">点击</span></div>
+                                </td>
+                                <td width="10%" height="22" background="__PUBLIC__/img/admin/bg2.gif" bgcolor="#FFFFFF" class="STYLE1">
+                                    <div align="center">发布人</div>
+                                </td>
+                                <td width="15%" height="22" background="__PUBLIC__/img/admin/bg2.gif" bgcolor="#FFFFFF" class="STYLE1">
+                                    <div align="center">操作</div>
+                                </td>
+                            </tr>    
+                            <volist name="performanceList" id="vo">
+                                <tr>
+                                    <td height="20" bgcolor="#FFFFFF">
+                                        <div align="center"><input type="checkbox" name="checkbox2" value="checkbox" /></div>
+                                    </td>
+                                    <td height="20" bgcolor="#FFFFFF">
+                                        <div align="center" class="STYLE1">
+                                            <div align="center">{$vo.id}</div>
+                                        </div>
+                                    </td>
+                                    <td height="20" bgcolor="#FFFFFF">
+                                        <div align="center"><span class="STYLE1">{:\\Org\\Util\\String::msubstr($vo['title'], 0, 10)}</span></div>
+                                    </td>
+                                    <td height="20" bgcolor="#FFFFFF">
+                                        <div align="center"><span class="STYLE1">{$vo.post_time|date="Y-m-d H:i:s",###}</span></div>
+                                    </td>
+                                    <td bgcolor="#FFFFFF">
+                                        <div align="center"><span class="STYLE1">{$vo.keywords|msubstr=0,20}</span></div>
+                                    </td>
+                                    <td height="20" bgcolor="#FFFFFF">
+                                        <div align="center"><span class="STYLE1">{$vo.hits}</span></div>
+                                    </td>
+                                    <td height="20" bgcolor="#FFFFFF">
+                                        <div align="center"><span class="STYLE1">{$vo.username}</span></div>
+                                    </td>
+                                    <td height="20" bgcolor="#FFFFFF">
+                                        <div align="center">
+                                            <span class="STYLE4"><a href="__URL__/show/id/{$vo.id}">
+                                                <img src="__PUBLIC__/img/admin/edt.gif" width="16" height="16" />编辑</a>&nbsp; &nbsp;
+                                                <a href="__URL__/delete/id/{$vo.id}">
+                                                    <img src="__PUBLIC__/img/admin/del.gif" width="16" height="16" />删除
+                                                </a>
+                                            </span>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </volist>
+                        </table>
+        </div>
+    </form>
+    <script type='text/javascript'>
+        $(document).ready(function(){
+           alert('here'); 
+        });
+    </script>
+</body>
+</html>

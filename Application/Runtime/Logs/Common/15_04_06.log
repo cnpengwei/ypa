@@ -1,0 +1,6 @@
+[ 2015-04-06T12:22:51+08:00 ] 112.124.214.2 /index.php/admin/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000273s ]
+ERR: 无法加载模块:
+

@@ -1,0 +1,215 @@
+
+<!DOCTYPE html>
+ <html>
+ <head>
+    <meta charset="utf-8">
+    <title>template of home - index - index method</title>
+    <link href="__PUBLIC__/css/style.css" rel="stylesheet" />
+    <link href="__PUBLIC__/img/100du.ico" rel="shortcut icon" />
+    <script src="__PUBLIC__/js/jquery-1.11.0.min.js"></script>
+    <script src="__PUBLIC__/js/tween.js"></script>
+    <script src="__PUBLIC__/js/100du.js"></script>
+    <style type="text/css">
+        .top-s{height:35px;background:#f5f5f5;border-bottom:1px solid #e5e5e5;}
+        .top-con{width:1000px;margin:0 auto;color:#999;height:35px;line-height:35px;}
+        .top-con li{
+            background:url("__PUBLIC__/img/top-bg.png") no-repeat scroll right 12px;
+            padding:0 11px 0 10px;
+            float:left;
+            position:relative;
+            height:35px;
+            z-index:1000;
+        }
+        .top-con li.dm-info{padding-left:0;}
+        .top-con li.mini-logo{background:none;padding-left:0;padding-right:0;}
+        .top-con li.mini-logo img{margin-right:20px;vertical-align:middle;_margin-top:5px;}
+        .top-con li.dm-info .dm-name{padding-right:10px;}
+        .top-con li.dm-info .dm-login{color:#e51b46;padding:0 5px;}
+        .top-con li.dm-info .dm-register{color:#999;padding-right:5px;}
+        .top-con li.dm-info .dm-login:hover,
+        .top-con li.dm-info .dm-register:hover{text-decoration:underline;}
+        .top-con li.dm-info .dm-message{color:#999;padding:0 10px;}
+        .top-con li.dm-info .dm-message 
+        em{
+            background:url(http://dui.damai.cn/dm_2014/common/img/top-bg.png) no-repeat scroll 0 -115px;
+            width:16px;height:12px;display:inline-block;overflow:hidden;margin-right:5px;position:relative;top:2px;
+            *top:-1px;_margin-top:12px;
+        }
+        .top-con li.dm-info .dm-message strong{color:#e51b46;}
+        .top-con li.dm-info .dm-exit{color:#999;}
+        .top-con li b{
+            width:7px;height:4px;overflow:hidden;
+            background:url(http://dui.damai.cn/dm_2014/common/img/top-bg.png) no-repeat scroll 0 -40px;
+            position:absolute;top:15px;right:10px;
+            transition:all .3s ease-in;-moz-transition:all .3s ease-in;-webkit-transition:all .3s ease-in;
+        }
+        .top-con li:hover b,
+        .top-con li.on b{
+            transform:rotate(360deg);
+            -moz-transform:rotate(360deg);
+            -webkit-transform:rotate(360deg);
+            background-position:0 -50px;
+        }
+        .top-con li .dm-t a{color:#999;}
+        .top-con li .dm-c{display:none;}
+        .top-con li.on .dm-t{
+            background:#fff;height:35px;line-height:34px;padding-left:10px;border:1px solid #e5e5e5;border-bottom:none;
+        }
+        .top-con li.on .dm-c{
+            display:block;border:1px solid #e5e5e5;background:#fff;border-top:none;
+        }
+        .top-con li.mydm{background:none;}
+        .top-con li.mydm,
+        .top-con li.dm-service{width:59px;}
+        .top-con li.mydm.on .mydm-t,.top-con li.dm-service.on .service-t{width:69px;position:absolute;left:-1px;top:0;}
+        .top-con li.mydm.on .mydm-c,.top-con li.dm-service.on .service-c{width:79px;position:absolute;top:36px;left:-1px;padding:5px 0;}
+        .top-con li.mydm.on .mydm-c a,.top-con li.dm-service.on 
+        .service-c a{
+            line-height:22px;color:#333;display:block;text-align:center;
+        }
+        .top-con li.mydm.on .mydm-c a:hover,
+        .top-con li.dm-service.on .service-c a:hover{background:#f5f5f5;color:#e51b46;}
+        .top-con li.dm-app{width:53px;}
+        .top-con li.dm-app 
+        .app-t em{
+            width:11px;height:16px;display:inline-block;overflow:hidden;position:relative;top:4px;*top:1px;margin-right:5px;
+            background:url(http://dui.damai.cn/dm_2014/common/img/top-bg.png) no-repeat scroll 0 -60px;transition:all .2s ease 0s;-moz-transition:all .2s ease 0s;-webkit-transition:all .2s ease 0s;_margin-top:7px;
+        }
+        .top-con li.dm-app:hover .app-t em{background-position:0 -80px;}
+        .top-con li.dm-app.on .app-t{width:71px;position:absolute;left:-1px;top:0;}
+        .top-con li.dm-app.on .app-c{padding:15px;background:url(http://dui.damai.cn/dm_2014/common/img/app.png) no-repeat scroll 15px 15px #fff;width:195px;position:absolute;top:36px;left:-1px;
+        }
+        .top-con li.dm-app.on .app-c .dm-code{
+            padding-left:98px;padding-top:35px;line-height:25px;padding-bottom:10px;
+        }
+        .top-con li.dm-app.on .app-c .dm-code .t1{color:#999;}
+        .top-con li.dm-app.on .app-c .dm-code .t2{color:#e51b46;font-size:16px;font-family:"Microsoft YaHei";}
+        .top-con li.dm-app.on .app-c .dm-iphone,
+        .top-con li.dm-app.on .app-c .dm-ipad,
+        .top-con li.dm-app.on .app-c .dm-android ,
+        .top-con li.dm-app.on .app-c .dm-wp{width:195px;height:40px;display:block;margin-bottom:2px;}
+        .top-con li.dm-site-nav{width:73px;background:none;}
+        .top-con li.dm-site-nav .site-nav-t em{
+            width:10px;height:10px;display:inline-block;overflow:hidden;position:relative;top:1px;*top:-1px;margin-right:5px;background:url(http://dui.damai.cn/dm_2014/common/img/top-bg.png) no-repeat scroll 0 -100px;_margin-top:12px;
+        }
+        .top-con li.dm-site-nav.on .site-nav-t{width:83px;position:absolute;left:-1px;top:0;}
+        .top-con li.dm-site-nav.on .site-nav-c{padding:15px 0 20px;width:780px;position:absolute;top:36px;right:0;}
+        .top-con li.dm-site-nav.on .site-nav-c dl{border-right:1px solid #f2f2f2;float:left;padding:0 10px;height:260px;overflow:hidden;}
+        .top-con li.dm-site-nav.on .site-nav-c dl.dm-sev01{width:155px;}
+        .top-con li.dm-site-nav.on .site-nav-c dl.dm-sev02{width:406px;border-right:none;}
+        .top-con li.dm-site-nav.on .site-nav-c dt{
+            color:#999;font-size:14px;font-family:"Microsoft YaHei";line-height:14px;padding-bottom:10px;padding-left:10px;
+        }
+        .top-con li.dm-site-nav.on .site-nav-c li{
+            background:none;line-height:30px;padding-right:0;
+        }
+        .top-con li.dm-site-nav.on .site-nav-c dl.dm-sev01 li{width:60px;}
+        .top-con li.dm-site-nav.on .site-nav-c dl.dm-sev02 li{width:48px;}
+        .top-con li.dm-site-nav.on .site-nav-c dl li a{display:block;height:30px;overflow:hidden;}
+
+    </style>
+ </head>
+<body>
+    <div class="top-s">
+        <div class="top-con" data-unuse="1">
+            <ul class="fl">
+                <li id="headerUserinfo" class="dm-info">
+                    <span class="dm-name">HI , XXX...</span>
+                    <a href="http://my.youpiaoa.cn/interaction/siteMessage.aspx" target="_blank" class="dm-message">
+                        <em></em>
+                        <span>站内信</span><strong>0</strong>
+                    </a>
+                    <a class="dm-exit" title="退出" href="javascript:;">
+                        退出
+                    </a>
+                </li>
+                <li class="mydm">
+                    <div class="dm-t mydm-t" data-unuse="1"><a href="http://my.youpiaoa.cn/" target="_blank">我的票</a><b></b></div>
+                    <div class="dm-c mydm-c" data-unuse="1">
+                        <a href="http://my.youpiaoa.cn/account/myinfo.aspx" target="_blank" title="个人信息">个人信息</a>
+                        <a href="http://order.youpiaoa.cn/index.aspx" target="_blank" title="订单管理">订单管理</a>
+                        <a href="http://my.youpiaoa.cn/trade/ewallet/myEwallet.aspx" target="_blank" title="我的钱包">我的钱包</a>
+                        <a href="http://my.youpiaoa.cn/account/mysubscribe" target="_blank">我的订阅</a>
+                        <a href="https://coupon.youpiaoa.cn/coupon-web-damai/mycoupon/myCoupon" target="_blank" title="我的优惠券">优惠券</a>
+                    </div>
+                </li>
+            </ul>
+
+            <ul class="fr">
+                <li><div class="dm-t" data-unuse="1"><em></em><a href="http://en.youpiaoa.cn/" target="_blank">English</a></div></li>
+                <li class="dm-app">
+                    <div class="dm-t app-t" data-unuse="1"><em></em><a href="http://mobile.youpiaoa.cn/" target="_blank">手机版</a></div>
+                    <div class="dm-c app-c" data-unuse="1">
+                    <div class="dm-code" data-unuse="1"> 
+                        <p class="t1">描我，即刻下载</p><p class="t2">大麦客户端</p></div>
+                        <a href="javascript:;" target="_blank" class="dm-iphone"></a>
+                        <a href="javascript:;" target="_blank" class="dm-ipad"></a>
+                        <a href="javascript:;" target="_blank" class="dm-android"></a>
+                        <a href="javascript:;" target="_blank" class="dm-wp"></a>
+                    </div>
+                </li>
+                <li class="dm-service">
+                    <div class="dm-t service-t" data-unuse="1"><a href="javascript:void(0)">客户服务</a><b></b></div>
+                    <div class="dm-c service-c" data-unuse="1">
+                        <a href="http://www.youpiaoa.cn/helpcollect.html#selfservice" target="_blank">自助服务</a>
+                        <a href="http://www.youpiaoa.cn/helpcollect.html#onlineservice" target="_blank">人工服务</a>
+                        <a href="http://www.youpiaoa.cn/helpcollect.html#specialproducts" target="_blank">特色产品</a>
+                        <a href="http://www.youpiaoa.cn/helpindex.html" target="_blank">帮助中心</a>
+                    </div>
+                </li>
+                <li class="dm-site-nav">
+                    <div class="dm-t site-nav-t" data-unuse="1"><em></em><a href="javascript:void(0)">网站导航</a><b></b></div>
+                    <div class="dm-c site-nav-c" data-unuse="1">
+                        <dl class="dm-sev01">
+                            <dt>特色服务</dt>
+                            <dd>
+                                <ul>
+                                    <li><a target="_blank" href="http://i.youpiaoa.cn/super/">超级票</a></li>
+                                    <li><a target="_blank" href="http://venue.youpiaoa.cn/">场馆库</a></li>
+                                    <li><a target="_blank" href="http://www.youpiaoa.cn/pwxt">票务系统</a></li>
+                                    <li><a target="_blank" href="http://dingyue.youpiaoa.cn/subType.do?platformId=1">演出订阅</a></li>
+                                    <li><a target="_blank" href="http://jf.youpiaoa.cn/">积分商城</a></li>
+                                    <li><a target="_blank" href="http://i.youpiaoa.cn/">精彩专题</a></li>
+                                    <li><a target="_blank" href="http://anti.youpiaoa.cn/">防诈骗</a></li>
+                                    <li><a target="_blank" href="http://www.youpiaoa.cn/artistlist.html">明星团体</a></li>
+                                    <li><a target="_blank" href="http://mobile.youpiaoa.cn/">手机购票</a></li>
+                                </ul>
+                            </dd>
+                        </dl>
+                        <dl class="dm-sev01">
+                            <dt>演出分类</dt>
+                            <dd>
+                                <ul>
+                                    <li><a href="http://www.youpiaoa.cn/projectlist.aspx?mcid=1" target="_blank" title="演唱会">演唱会</a></li>
+                                    <li><a href="http://www.youpiaoa.cn/projectlist.aspx?mcid=2" target="_blank" title="音乐浼??>音乐会</a></li>
+                                    <li><a href="http://movie.youpiaoa.cn/quickbuy.aspx" target="_blank" title="电影票">电影票</a></li>
+                                    <li><a href="http://www.youpiaoa.cn/projectlist.aspx?mcid=4" target="_blank" title="舞蹈芭">舞蹈芭蕾</a></li>
+                                    <li><a href="http://www.youpiaoa.cn/projectlist.aspx?mcid=5" target="_blank" title="曲苑杂坛">曲苑</a></li>
+                                    <li><a href="http://www.youpiaoa.cn/projectlist.aspx?mcid=6" target="_blank" title="浣????比赛">体育比赛</a></li>
+                                    <li><a href="http://www.youpiaoa.cn/projectlist.aspx?mcid=7" target="_blank" title="度假休闲">度假休闲</a></li>
+                                    <li><a href="http://www.youpiaoa.cn/projectlist.aspx?mcid=8" target="_blank" title="周边商品">周边商品</a></li>
+                                    <li><a href="http://www.youpiaoa.cn/projectlist.aspx?mcid=100" target="_blank" title="儿童亲子">儿童亲子</a></li>
+                                    <li><a href="http://www.youpiaoa.cn/projectlist.aspx?mcid=3" target="_blank" title="话剧歌">话剧歌剧</a></li>     
+                                </ul>
+                            </dd>
+                        </dl>
+                        <dl class="dm-sev02">
+                            <dt>城市切换</dt>
+                            <dd>
+                                <ul>
+                                    <li><a title="北京" href="http://www.youpiaoa.cn/bj/" target="_blank">北京</a></li>
+                                    <li><a title="上海" href="http://www.youpiaoa.cn/sh/" target="_blank">上海</a></li>
+                                    <li><a title="深圳" href="http://www.youpiaoa.cn/sz/" target="_blank">深圳</a></li>
+                                </ul>
+                            </dd>
+                        </dl>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <br/>
+    {$Think.config.DB_TYPE}
+</body>
+</html>
+

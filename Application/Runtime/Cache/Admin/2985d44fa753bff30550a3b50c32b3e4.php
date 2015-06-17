@@ -1,0 +1,1 @@
+<?php if (!defined('THINK_PATH')) exit();?>here index method of IndexController, Admin module

@@ -1,0 +1,28 @@
+<html>
+
+<head>
+</head>
+
+<body>
+
+<!-- <form method="post" id="login_form" action="{:U('__SELF__/verify_login')}"> -->
+<!-- <form method="post" id="add_user_form" name="add_user_form" action="__URL__/add_user">-->
+<!-- <form method="post" id="add_user_form" name="add_user_form" action="{:U('__URL__/add_user')}">  -->
+<form method="post" id="add_user_form" name="add_user_form" action="{:U('test/Index/add_user')}">
+    <div>
+        添加新用户
+    </div>
+    <div>
+        <label for="id_email">邮件:</label>
+        <input type="text" id="id_email" value="1111111@163.com" name="email" />
+        <label for="id_user_name">用户名:</label>
+        <input type="text" id="id_user_name" value="aaaaaaaa" name="user_name" />
+        <label for="id_pass_word">密码:</label>
+        <input type="password" id="id_pass_word" value="bbbbbbbb" name="pass_word" />
+    </div>
+    <div>
+        <input type="submit" name="submit" value="提交" />
+    </div>
+</form>
+</body>
+</html>

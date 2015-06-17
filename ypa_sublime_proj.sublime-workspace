@@ -1,0 +1,456 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"p",
+				"padding"
+			],
+			[
+				"bo",
+				"border-bottom"
+			],
+			[
+				"bor",
+				"border-left"
+			],
+			[
+				"b",
+				"background-position"
+			],
+			[
+				"ba",
+				"background-position"
+			],
+			[
+				"fon",
+				"font-size"
+			],
+			[
+				"te",
+				"text-align"
+			],
+			[
+				"pa",
+				"padding-top"
+			],
+			[
+				"font",
+				"font-weight"
+			],
+			[
+				"ma",
+				"margin-bottom"
+			],
+			[
+				"f",
+				"float"
+			],
+			[
+				"a",
+				"article"
+			],
+			[
+				"border-",
+				"border-width"
+			],
+			[
+				"mgr",
+				"margin-bottom"
+			],
+			[
+				"padin",
+				"padding-left"
+			],
+			[
+				"where",
+				"whererand"
+			],
+			[
+				"ord",
+				"order"
+			],
+			[
+				"ad",
+				"ad_position"
+			],
+			[
+				"bac",
+				"background-color"
+			],
+			[
+				"mar",
+				"margin"
+			],
+			[
+				"ca",
+				"category"
+			],
+			[
+				"onmou",
+				"onmouseout	Attr"
+			],
+			[
+				"onMo",
+				"onmouseover	Attr"
+			],
+			[
+				"e",
+				"e4393c"
+			],
+			[
+				"no",
+				"no-repeat"
+			],
+			[
+				"margin",
+				"margin-top"
+			],
+			[
+				"ta",
+				"target	Attr"
+			],
+			[
+				"tex",
+				"text-align"
+			],
+			[
+				"in",
+				"inline-block"
+			],
+			[
+				"m",
+				"margin-bottom"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "Application/Home/View/Index/index.html",
+			"settings":
+			{
+				"buffer_size": 11412,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "Application/Home/Controller/IndexController.class.php",
+			"settings":
+			{
+				"buffer_size": 1433,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "Public/Home/css/main.css",
+			"settings":
+			{
+				"buffer_size": 9844,
+				"line_ending": "Windows"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 0.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/D/wamp/www/ypa",
+		"/D/wamp/www/ypa/Application",
+		"/D/wamp/www/ypa/Application/Admin",
+		"/D/wamp/www/ypa/Application/Home",
+		"/D/wamp/www/ypa/Public",
+		"/D/wamp/www/ypa/Public/Home",
+		"/D/wamp/www/ypa/Public/Home/img",
+		"/D/wamp/www/ypa/ThinkPHP"
+	],
+	"file_history":
+	[
+		"/D/wamp/www/ypa/index.php",
+		"/D/wamp/www/ypa/Application/Home/Model/CategoryModel.class.php",
+		"/D/wamp/www/ypa/Application/Home/Common/function.php",
+		"/D/wamp/www/ypa/Application/Home/Controller/IndexController.class.php",
+		"/C/Users/Administrator/Desktop/a/QQ音乐10屏带缩略图JS焦点图代码/index.html",
+		"/D/wamp/www/ypa/Public/Home/js/swfobject.js",
+		"/D/wamp/www/ypa/Public/Home/css/main.css",
+		"/D/wamp/www/ypa/ThinkPHP/Library/Think/Model/RelationModel.class.php",
+		"/D/wamp/www/ypa/Application/Home/View/Index/index.html",
+		"/D/wamp/www/ypa/Application/Runtime/Logs/Home/15_06_11.log",
+		"/D/wamp/www/ypa/Application/Runtime/Logs/Home/15_03_24.log",
+		"/E/BaiduYunDownload/studyFox/第004-050讲/第45讲_关联模型应用之获取商品分类/StudyIMShop/index/Tpl/default/Index/index.html",
+		"/D/wamp/www/ypa/ThinkPHP/Tpl/think_exception.tpl",
+		"/E/BaiduYunDownload/studyFox/第004-050讲/第45讲_关联模型应用之获取商品分类/StudyIMShop/index/Lib/Action/IndexAction.class.php",
+		"/E/BaiduYunDownload/studyFox/第004-050讲/第45讲_关联模型应用之获取商品分类/StudyIMShop/index/Lib/Model/CategoryModel.class.php",
+		"/C/Users/Administrator/Desktop/cate.sql",
+		"/D/wamp/www/ypa/Application/Home/Conf/config.php",
+		"/D/wamp/www/ypa/Application/Common/Conf/config.php",
+		"/D/wamp/www/ypa/Application/Home/View/Register/Index.html",
+		"/D/wamp/www/ypa/Application/Home/View/Login/index.html",
+		"/D/wamp/www/ypa/Application/Home/Controller/RegisterController.class.php",
+		"/D/wamp/www/ypa/Application/Home/Controller/LoginController.class.php",
+		"/D/wamp/www/youpiaoa.cn/Public/Home/css/log_reg.css",
+		"/D/360极速浏览器下载/zTree-zTree_v3-master/zTree_v3/demo/cn/core/standardData.html",
+		"/D/wamp/www/youpiaoa.cn/Public/Home/css/main.css",
+		"/D/wamp/www/youpiaoa.cn/Application/Home/View/Index/index.html",
+		"/E/wampbak/web/ticket/joinlist.php",
+		"/D/wamp/www/youpiaoa.cn/Application/Home/View/Login/index.html",
+		"/D/wamp/www/youpiaoa.cn/Public/Home/main.css",
+		"/D/wamp/www/youpiaoa.cn/Application/Home/View/Index/index.html.bak",
+		"/D/wamp/www/youpiaoa.cn/Application/Home/Controller/IndexController.class.php",
+		"/D/tree/test/zTree.html",
+		"/E/BaiduYunDownload/studyFox/第004-050讲/第11讲_仿京东商城登录功能/StudyIMShop/index/Tpl/default/Index/index.html",
+		"/D/tree/doc/zTree_v3/demo/cn/index.html",
+		"/D/tree/doc/zTree_v3/demo/cn/core/standardData.html",
+		"/D/tree/doc/zTree_v3/demo/cn/super/asyncForAll.html",
+		"/D/tree/zTree.html"
+	],
+	"find":
+	{
+		"height": 34.0
+	},
+	"find_in_files":
+	{
+		"height": 90.0,
+		"where_history":
+		[
+			"D:\\wamp\\www\\ypa\\ThinkPHP",
+			"D:\\wamp\\www\\ypa"
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": true,
+		"find_history":
+		[
+			"fa",
+			"1",
+			"mscroll-ctrl-prev",
+			"font",
+			"relation",
+			"relationnnnn",
+			"RelationModel",
+			"studyim_"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"tb_ypa_"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": true,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 2,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "Application/Home/View/Index/index.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 11412,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								10808,
+								10808
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 1345.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "Application/Home/Controller/IndexController.class.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1433,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1267,
+								1267
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 448.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "Public/Home/css/main.css",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 9844,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								9842,
+								9842
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/CSS/CSS.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 2286.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 23.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "ypa_sublime_proj.sublime-project",
+	"replace":
+	{
+		"height": 42.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": false,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 196.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

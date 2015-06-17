@@ -1,0 +1,33 @@
+<?php
+namespace Model;
+use Think\Model;
+class UserModel  extends Model{
+    protected $tableName = 'users'; 
+    
+    public function getTopUser(){
+    
+    }
+
+    
+    public function validate_input(){
+        $email = $user_name = $pass_word = "";
+        if($_SERVER["REQUEST_METHOD"] == "POST"){
+            $email = test_input($_POST["email"]);
+            $user_name = test_input($_POST["user_name"]);            
+        }
+        return true;
+    }
+ 
+    function test_input($data){
+        $data = trim($data);
+        $data = stripslashes($data);
+        $data = htmlspecialchars($data);
+        return $data;
+    }   
+
+    #查询分类数据
+    #$data=D('goods_type')->field('goods_type_id,goods_type_fid,goods_type_name,concat(path,"-",id) as typepath')->order('typepath,id')->select();
+    
+    # if (!preg_match("/([\w\-]+\@[\w\-]+\.[\w\-]+)/",$email)){
+}
+

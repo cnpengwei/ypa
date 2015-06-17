@@ -1,0 +1,24 @@
+[ 2015-03-31T21:09:54+08:00 ] 112.124.214.2 /index.php/admin/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000277s ]
+ERR: 无法加载模块:
+
+[ 2015-03-31T21:10:03+08:00 ] 112.124.214.2 /index.php/admin/performance/perf_list
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000272s ]
+ERR: 无法加载模块:
+
+[ 2015-03-31T21:10:07+08:00 ] 112.124.214.2 /index.php/admin/performance
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000296s ]
+ERR: 无法加载模块:
+
+[ 2015-03-31T21:10:14+08:00 ] 112.124.214.2 /index.php/admin/performance/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000274s ]
+ERR: 无法加载模块:
+
