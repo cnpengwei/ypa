@@ -1,3 +1,6 @@
 #The file should be ignored
 # 1. Application/Common/Conf/config.php
 /Application/Common/Conf/config.php
+
+# 2. ignore the files and folders under Application\Runtime
+/Application/Runtime
