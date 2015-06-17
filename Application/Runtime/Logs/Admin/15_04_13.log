@@ -1,9 +1,0 @@
-[ 2015-04-13T10:05:01+08:00 ] 112.124.214.2 /index.php/admin/concert
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
-INFO: [ app_init ] --END-- [ RunTime:0.000283s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000351s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.000410s ]
-ERR: 无法加载控制器:Concert
-
