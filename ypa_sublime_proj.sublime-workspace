@@ -147,7 +147,7 @@
 			"file": "Public/Home/css/main.css",
 			"settings":
 			{
-				"buffer_size": 9844,
+				"buffer_size": 9854,
 				"line_ending": "Windows"
 			}
 		}
@@ -186,15 +186,16 @@
 	[
 		"/D/wamp/www/ypa",
 		"/D/wamp/www/ypa/Application",
-		"/D/wamp/www/ypa/Application/Admin",
-		"/D/wamp/www/ypa/Application/Home",
-		"/D/wamp/www/ypa/Public",
+		"/D/wamp/www/ypa/Application/Common",
+		"/D/wamp/www/ypa/Application/Common/Conf",
+		"/D/wamp/www/ypa/Application/Lib",
 		"/D/wamp/www/ypa/Public/Home",
-		"/D/wamp/www/ypa/Public/Home/img",
-		"/D/wamp/www/ypa/ThinkPHP"
+		"/D/wamp/www/ypa/Public/Home/img"
 	],
 	"file_history":
 	[
+		"/D/wamp/www/ypa/.gitignore",
+		"/D/wamp/www/ypa/Application/Common/Conf/config.php",
 		"/D/wamp/www/ypa/index.php",
 		"/D/wamp/www/ypa/Application/Home/Model/CategoryModel.class.php",
 		"/D/wamp/www/ypa/Application/Home/Common/function.php",
@@ -212,7 +213,6 @@
 		"/E/BaiduYunDownload/studyFox/第004-050讲/第45讲_关联模型应用之获取商品分类/StudyIMShop/index/Lib/Model/CategoryModel.class.php",
 		"/C/Users/Administrator/Desktop/cate.sql",
 		"/D/wamp/www/ypa/Application/Home/Conf/config.php",
-		"/D/wamp/www/ypa/Application/Common/Conf/config.php",
 		"/D/wamp/www/ypa/Application/Home/View/Register/Index.html",
 		"/D/wamp/www/ypa/Application/Home/View/Login/index.html",
 		"/D/wamp/www/ypa/Application/Home/Controller/RegisterController.class.php",
@@ -346,15 +346,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 9844,
+						"buffer_size": 9854,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								9842,
-								9842
+								9854,
+								9854
 							]
 						],
 						"settings":
@@ -362,7 +362,7 @@
 							"syntax": "Packages/CSS/CSS.tmLanguage"
 						},
 						"translation.x": 0.0,
-						"translation.y": 2286.0,
+						"translation.y": 1775.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
