@@ -154,5 +154,7 @@ body {font: 12px/150% Arial,Verdana,sans-serif,"宋体b8b\4f53";color: #666;}
 .catalogue .mc { position: relative; width: 209px; height: 361px; border-left: 0; border-bottom: 1px solid #eee;}
 .catalogue ul { position: absolute; width: 198px; height: 200px; top:0;left: 0;padding: 5px;}
 .catalogue li { width: 95px; height: 25px; line-height:25px; overflow: hidden;float: left; padding: 0;}
-.catelogue span {position: absolute; bottom: 0;}
+.catalogue span {position: absolute; bottom: 0;}
+
+
 /*中间广告*/
